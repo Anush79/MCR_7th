@@ -14,7 +14,7 @@ export default function Countries() {
       </h3>
       <div className="flex flex-row gap-4 relative">
         {continentFound?.countries?.map((item) => (
-          <NavLink to={`/${item.name.slice(0, 4)}/${item.name.slice(0, 4)}`}>
+          <NavLink to={`/${continentFound.name.slice(0, 4)}/${item.name.slice(0, 4)}`}>
             <Card item={item} />
           </NavLink>
         ))}

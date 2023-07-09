@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import Landing from "./pages/Landing";
 import Countries from "./pages/Countries";
+import Destination from './pages/Places'
 import { Routes, Route } from "react-router-dom";
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
     <Routes>
       <Route path="/" element={  <Landing/>}></Route>
       <Route path="/:continent" element={  <Countries />}></Route>
-      <Route path="/:continent/:country" element={  <Landing/>}></Route>
+      <Route path="/:continent/:country" element={  <Destination/>}></Route>
     </Routes>
       </main>
    
