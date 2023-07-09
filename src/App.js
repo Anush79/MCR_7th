@@ -9,13 +9,13 @@ function App() {
   return (
     <div className="App bg-slate-900 text-white flex flex-col justify-between h-screen items-center">
       <main>
-         <h1 className="text-3xl font-bold ">
+         <h1 className="text-5xl font-bold m-5 ">
       Welcome to Trip Advisor
     </h1>
-    <h3>Top continents for your next holiday</h3>
+   
     <Routes>
       <Route path="/" element={  <Landing/>}></Route>
-      <Route path="/:continent" element={  <Countries/>}></Route>
+      <Route path="/:continent" element={  <Countries />}></Route>
       <Route path="/:continent/:country" element={  <Landing/>}></Route>
     </Routes>
       </main>
